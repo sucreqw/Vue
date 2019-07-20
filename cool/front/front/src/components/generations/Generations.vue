@@ -19,8 +19,11 @@
               <el-form-item label="姓名">
                 <el-input v-model="FormData.nickname"></el-input>
               </el-form-item>
-              <el-form-item label="妻子姓名">
+              <el-form-item label="配偶姓名">
                 <el-input v-model="FormData.wife"></el-input>
+              </el-form-item>
+              <el-form-item label="出生年月日">
+                <el-input v-model="FormData.birthday"></el-input>
               </el-form-item>
               <el-form-item label="性别">
                 <!--<el-input v-model="FormData.gender"></el-input>-->

@@ -16,13 +16,17 @@
           style="width: 100%">
 
           <el-table-column
-            prop="fileName"
-            label="文件名"
+            label="预览"
           >
             <template slot-scope="scope">
               <el-image :src="'/weiboimg/'+ scope.row.fileName" lazy
                         style="width: 50px;height: 50px;"></el-image>
             </template>
+          </el-table-column>
+          <el-table-column
+            prop="fileName"
+            label="文件名"
+          >
           </el-table-column>
           <el-table-column
             label="操作"

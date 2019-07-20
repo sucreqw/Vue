@@ -15,9 +15,9 @@
       <el-collapse accordion v-for="(item,index) in tableData">
         <el-collapse-item>
           <template slot="title">
-            <div style="font-size: 28px;"> {{item.title}}</div>
+            <div > {{item.title}}</div>
           </template>
-          <div style="font-size: 18px;">{{item.content}}</div>
+          <div :id="'content_'+item.id">{{formatContent(item.content,item.id)}}</div>
         </el-collapse-item>
       </el-collapse>
     </div>
@@ -88,6 +88,18 @@
       background() {
         let div = document.querySelector('main');//document.getElementById('main');
         div.style.backgroundImage = this.bgImg.backgroundImage;;
+      },
+      formatContent(content,id){
+        //alert(content)
+        this.$nextTick(function () {
+          let newContent = this.convert(content);
+          let div = document.getElementById('content_' + id.toString());
+          div.innerHTML = newContent;
+        });
+      },
+      convert(content){
+        //alert(content);
+        return content//.replace('<p>','<br>');
       },
     }
   }

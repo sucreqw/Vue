@@ -79,8 +79,20 @@
         <el-row>
           <el-col :span="24">
             <el-form ref="" :model="FormData" label-width="100px">
+              <el-form-item label="token">
+                <el-input v-model="FormData.token"></el-input>
+              </el-form-item>
+              <el-form-item label="昵称">
+                <el-input v-model="FormData.nickname"></el-input>
+              </el-form-item>
+              <el-form-item label="头像">
+                <el-input v-model="FormData.avater"></el-input>
+              </el-form-item>
               <el-form-item label="内容">
-                <el-input v-model="FormData.query"></el-input>
+                <el-input v-model="FormData.content"></el-input>
+              </el-form-item>
+              <el-form-item label="赞">
+                <el-input v-model="FormData.mid"></el-input>
               </el-form-item>
             </el-form>
           </el-col>

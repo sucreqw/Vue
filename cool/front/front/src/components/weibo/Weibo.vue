@@ -73,7 +73,7 @@
             </el-footer>
           </el-container>
         </el-container>
-        <p v-if="nomore!=true">加载中...</p>
+        <p v-if="nomore!=true"><el-button @click="loadData()">加载中...(或手动点击加载)</el-button></p>
         <p v-if="nomore">没有更多了</p>
         <el-divider></el-divider>
         <br>
@@ -153,7 +153,7 @@
                 <el-divider></el-divider>
               </el-container>
             </el-container>
-            <p v-if="commentNomore!=true">加载中...</p>
+            <p v-if="commentNomore!=true"><el-button @click="loadComment()">加载中...(或手动点击加载)</el-button></p>
             <p v-if="commentNomore">没有更多了</p>
             <el-divider></el-divider>
             <br>
