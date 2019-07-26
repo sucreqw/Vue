@@ -10,7 +10,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
+    assetsPublicPath: '/',//发布改这里
     proxyTable: {
       '/cool': {
         target: "http://localhost:8989",  //目标接口域名
@@ -59,7 +59,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
+    assetsPublicPath: '/',//发布改这里
 
     /**
      * Source Maps

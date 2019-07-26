@@ -19,6 +19,7 @@ import Comment from '@/components/weibo/Comment'
 import Share from '@/components/share/Share'
 import Picture from '@/components/picture/Picture'
 import ThirdPlatform from '@/components/setting/ThirdPlatform'
+import Credit from '@/components/credit/credit'
 
 const menuList = [
   {
@@ -119,6 +120,18 @@ const menuList = [
         path: 'picture',
         name: '图片列表',
         component: Picture
+      }]
+  },
+  {
+    path: '/credit',
+    name: '信用卡管理',
+    icon: 'el-icon-bank-card',
+    component: Wapper,
+    children: [
+      {
+        path: 'credit',
+        name: '信用卡管理',
+        component: Credit
       }]
   },
 ]
