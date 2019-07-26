@@ -1,35 +1,35 @@
 import axios from 'axios'
 
 export function get (id, callback) {
-  axios.get('/payRecordDO/' + id)
+  axios.get('/payRecordDo/' + id)
     .then(function (data) {
       callback(data)
     })
 }
 
 export function create (data, callback) {
-  axios.post('/payRecordDO/', data)
+  axios.post('/payRecordDo/', data)
     .then(function (data) {
       callback(data)
     })
 }
 
 export function update (id, data, callback) {
-  axios.put('/payRecordDO/' + id, data)
+  axios.put('/payRecordDo/' + id, data)
     .then(function (data) {
       callback(data)
     })
 }
 
 export function remove (id, callback) {
-  axios.delete('/payRecordDO/' + id)
+  axios.delete('/payRecordDo/' + id)
     .then(function (data) {
       callback(data)
     })
 }
 
-export function listPage (page, pageSize, config, callback) {
-  axios.get('/payRecordDO/page/' + page + '/' + pageSize, config)
+export function listPagePay (page, pageSize, config, callback) {
+  axios.get('/payRecordDo/page/' + page + '/' + pageSize, config)
     .then(function (data) {
       callback(data)
     })

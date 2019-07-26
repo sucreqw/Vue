@@ -20,6 +20,7 @@ import Share from '@/components/share/Share'
 import Picture from '@/components/picture/Picture'
 import ThirdPlatform from '@/components/setting/ThirdPlatform'
 import Credit from '@/components/credit/credit'
+import payRecord from '@/components/credit/PayRecord'
 
 const menuList = [
   {
@@ -132,6 +133,11 @@ const menuList = [
         path: 'credit',
         name: '信用卡管理',
         component: Credit
+      },
+      {
+        path: 'payRecord',
+        name: '付款记录',
+        component: payRecord
       }]
   },
 ]
