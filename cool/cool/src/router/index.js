@@ -21,6 +21,7 @@ import Picture from '@/components/picture/Picture'
 import ThirdPlatform from '@/components/setting/ThirdPlatform'
 import Credit from '@/components/credit/credit'
 import payRecord from '@/components/credit/PayRecord'
+import cardGather from '@/components/credit/cardGather'
 
 const menuList = [
   {
@@ -138,6 +139,11 @@ const menuList = [
         path: 'payRecord',
         name: '付款记录',
         component: payRecord
+      },
+      {
+        path: 'cardGather',
+        name: '汇总',
+        component: cardGather
       }]
   },
 ]

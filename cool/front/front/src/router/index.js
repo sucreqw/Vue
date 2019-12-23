@@ -16,6 +16,7 @@ import About from '@/components/about/About'
 import Weibo from '@/components/weibo/Weibo'
 import Drone from '@/components/drone/Drone'
 import Share from '@/components/share/Share'
+import Fate from '@/components/fate/fate'
 import SinaCallBack from "@/components/SinaCallBack";
 
 const menuList = [
@@ -50,6 +51,11 @@ const menuList = [
         path: 'share',
         name: '资源分享',
         component: Share
+      },
+      {
+        path: 'fate',
+        name: '八字',
+        component: Fate
       },
       {
         path: 'about',

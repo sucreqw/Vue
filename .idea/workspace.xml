@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b619c0cb-8fc3-47aa-becf-9e57d63bdaa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vue.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cool/cool/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cool/cool/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cool/cool/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cool/cool/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cool/cool/src/components/credit/PayRecord.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cool/cool/src/components/credit/PayRecord.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +27,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cool/cool/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -91,6 +87,7 @@
       <updated>1560439984764</updated>
       <workItem from="1560439985894" duration="9621000" />
       <workItem from="1564070278144" duration="2550000" />
+      <workItem from="1565057400840" duration="19000" />
     </task>
     <servers />
   </component>
@@ -102,7 +99,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

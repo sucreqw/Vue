@@ -132,6 +132,7 @@
                 <el-date-picker
                   v-model="FormData.payDate"
                   type="date"
+                  value-format="timestamp"
                   placeholder="选择日期"
                   format="yyyy 年 MM 月 dd 日">
                 </el-date-picker>
