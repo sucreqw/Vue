@@ -1,7 +1,7 @@
 <template>
-  <div >
+  <div>
 
-    <el-menu  router :default-active="$route.path"  class="el-menu-demo" mode="horizontal" >
+    <el-menu  router :default-active="$route.path"  class="el-menu-demo" mode="horizontal"  style="background-color: #606266">
       <template v-for="router in menuList">
         <el-menu-item v-if="!router.children" :index="router.path" :key="router.path">
           <i :class="router.icon"></i>

@@ -3,8 +3,8 @@
 
     <el-container>
 
-      <el-header>
-        <div>
+      <el-header style="background-color: #606266">
+        <div >
 
           <Menu></Menu>
         </div>
@@ -40,7 +40,7 @@
         </el-main>
 
         <el-footer
-          style="height:32px;line-height:32px;text-align: center; width:100%;">
+          style="height:32px;line-height:32px;text-align: center; width:100%; background-color: #606266">
           Copyright &copy; sucre
         </el-footer>
 
