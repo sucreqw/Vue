@@ -6,7 +6,6 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',//上线改这里 加.
@@ -17,7 +16,7 @@ module.exports = {
         pathRewrite: {
           '^/cool': ''   //重写接口
         }
-      }
+      },
     },
 
     // Various Dev Server settings
