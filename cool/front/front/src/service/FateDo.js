@@ -32,4 +32,13 @@ export function yearFate(isChinese,isLeap,data, callback) {
       callback(data, error);
     });
 }
+export function deity(isChinese,isLeap,data, callback) {
+  axios.post('/Deity/?isChinese='+ isChinese +"&isLeap="+isLeap, data)
+    .then(function (data) {
+      callback(data);
+    })
+    .catch(function (error) {
+      callback(data, error);
+    });
+}
 

@@ -51,11 +51,11 @@
 
 
           <div class="word"
-            style="margin-left:0px; letter-spacing: 10px; overflow-x: scroll;text-align: left;font-size: 10px;white-space: nowrap">
+            style="margin-left:0px; letter-spacing: 10px; text-align: left;font-size: 10px;">
             <!--white-space: nowrap 强制一行里显示-->
             <!--流年甲子天干-->
-            <small v-for="(item,index) in yearFate.flowYearGen"
-                   style="margin:19px;letter-spacing: 0px;">{{item}}</small>
+            <small v-for="(item,index) in deityData"
+                   style="margin:19px;letter-spacing: 0px;">{{item.title}}<br>{{item.description}}<br>{{item.solutions}}</small>
 
           </div>
         </div>
@@ -215,7 +215,7 @@
 
 <script>
     import defaultImg from '../../assets/fate.jpg';
-    import {getEightWord, tenGod, yearFate} from "../../service/FateDo";
+    import {getEightWord, tenGod, yearFate,deity} from "../../service/FateDo";
 
     export default {
         name: "Fate.vue",
@@ -246,6 +246,7 @@
                 retData: [],//基础info类返回,包含姓名,性别,阳阴历,八字,立春时间.
                 yearFate: [],//流年info类,包含小运,大运.起运时间,流年及对应的六十甲子
                 tenGod: [],//十神info类,包含八字对应属性,五行等. 十神的获取方式是直接用八字.
+                deityData: [],//命中所有的神煞.
                 //十神DTO
                 tenGodDTO: {
                     "dayGen": "",
@@ -293,6 +294,11 @@
                         yearFate(this.isChinese, this.isLeap, this.person, (data) => {
                             this.yearFate = data;
                         });
+                        //取命中神煞
+                        deity(this.isChinese, this.isLeap, this.person, (data) => {
+                            this.deityData = data;
+                        });
+
                     } else {
                         this.$message({
                             message: '出错了.',
