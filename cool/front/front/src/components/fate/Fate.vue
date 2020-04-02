@@ -53,7 +53,7 @@
           <div class="word"
             style="margin-left:0px; letter-spacing: 10px; text-align: left;font-size: 10px;">
             <!--white-space: nowrap 强制一行里显示-->
-            <!--流年甲子天干-->
+            <!--命中神煞-->
             <small v-for="(item,index) in deityData"
                    style="margin:19px;letter-spacing: 0px;">{{item.title}}<br>{{item.description}}<br>{{item.solutions}}</small>
 

@@ -6,7 +6,7 @@
       </PageOptionsWapper>
       <PageContainerWapper>
         <el-form ref="" inline :model="searchFormData" label-width="100px">
-          <el-form-item label="姓名">
+            <el-form-item label="姓名">
             <el-input v-model="searchFormData.query"></el-input>
           </el-form-item>
           <el-form-item label="父亲id">
