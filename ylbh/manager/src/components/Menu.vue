@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <el-menu style="border-right: 0" router :default-active="$route.path" >
+    <el-menu style="border-right: 0; background-color: rgb(162,236,255)" router :default-active="$route.path" mode="horizontal" >
       <template v-for="router in menuList">
         <el-menu-item v-if="!router.children" :index="router.path" :key="router.path">
           <i :class="router.icon"></i>
@@ -23,12 +22,14 @@
 </template>
 
 <script>
+
     export default {
         name: 'Menu',
         data () {
             return {
                 menuList: [],
-                //isCollapse: true,
+                isCollapse: false,
+
             }
         },
         created () {

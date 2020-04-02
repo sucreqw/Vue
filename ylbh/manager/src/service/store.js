@@ -10,7 +10,7 @@ export default new Vuex.Store({
     },
     mutations: {
         setToken(state, token) {
-            state.token = token;
+            state.token = token.token;
             if(token){
                 state.userInfo = JSON.parse(JSON.parse(Base64.decode(token.token.split('.')[1])).sysUser);
             }else{
