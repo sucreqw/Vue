@@ -43,8 +43,10 @@
         components: {Menu, SysUserInfo},
         data() {
             return {}
-        }
+        },
+        created() {
 
+        }
     }
 </script>
 

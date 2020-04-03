@@ -31,7 +31,9 @@
     import {login} from '../service/login.js'
     import {get} from '../service/Kaptcha.js'
     import store from '../service/store.js'
-
+    import Wapper from '../components/Wapper.vue'
+    import Hello from '@/components/hello.vue'
+    import Main from '@/components/Main.vue'
     export default {
         name: 'Login.vue',
         data() {
@@ -44,6 +46,17 @@
                 },
                 fits: 'fill',
                 picData: '',
+                menuList: [{
+                    path: '/hello',
+                    name: '首页',
+                    icon: 'el-icon-s-home',
+                    component: Wapper,
+                    children:[{
+                        path: 'hello',
+                        name: '首页',
+                        component: Hello
+                    }]
+                }],
             }
         }
         ,
@@ -66,6 +79,7 @@
                             })
                             this.loadPic()
                         } else {
+                            //登录成功！
                             store.commit('setToken', data);
                             //alert(data);
                             this.$router.push({
@@ -83,8 +97,10 @@
                     this.picData = data;
                 })
             },
+
         }
     }
+
 </script>
 
 <style scoped>
