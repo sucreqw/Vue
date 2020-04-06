@@ -1,5 +1,5 @@
 <template>
-    <div class="page-options-wapper">
+    <div class="page-options-wapper" style="text-align: left;">
         <slot></slot>
     </div>
 </template>

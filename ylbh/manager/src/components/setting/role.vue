@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        name: "SystemSetting.vue"
+        name: "role.vue"
     }
 </script>
 
