@@ -27,10 +27,11 @@
 
 <script>
     //服务器取菜单列表
-    import {get} from '../service/menu.js'
+    import {getMenus} from '../service/menu.js'
     import Wapper from '../components/Wapper.vue'
     import Hello from '../components/hello.vue'
     import Setting from '../components/setting/MenuSetting.vue'
+    import Role from '../components/setting/role.vue'
 
     export default {
         name: 'Menu',
@@ -59,7 +60,7 @@
         methods: {
             //取当前权限内的菜单列表
             getMenu() {
-                get((data) => {
+                getMenus((data) => {
                     //把所有菜单信息存入变量
                     this.menuList = data;
                     //取当前路由层级

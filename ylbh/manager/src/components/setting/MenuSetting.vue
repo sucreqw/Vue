@@ -97,17 +97,19 @@
         name: "MenuSetting.vue",
         data() {
             return {
+                //分页设置
                 pageInfo: {
                     page: 1,
                     pageSize: 10,
                     total: 0
                 },
-                //
+                //接收列表信息
                 tableData: [],
                 //所有一级菜单
                 AllFirstMenu:[],
                 //搜索表单
                 searchFormData: {query: ''},
+                //页面渲染状态开关
                 status: 0,
                 //提交的表单数据DTO，保存或者新增.
                 FormData: {
