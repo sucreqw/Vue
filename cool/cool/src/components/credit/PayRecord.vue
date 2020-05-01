@@ -211,7 +211,7 @@
         this.loadData()
       },
       loadCardData () {
-        listPage(this.pageInfo.page, this.pageInfo.pageSize, {params: this.searchFormData}, (data) => {
+        listPage(this.pageInfo.page, 100, {params: this.searchFormData}, (data) => {
           this.allCardData = data.records
           //this.pageInfo.total = data.total
 
