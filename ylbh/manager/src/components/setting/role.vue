@@ -244,19 +244,6 @@
                 let s = date.getSeconds();
                 s = s < 10 ? ('0' + s) : s;
                 return y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;
-            },
-            loadNode(node, resolve) {
-                if (node.level === 0) {
-                    return resolve(this.menuList);
-                }
-                var hasChild;
-                if (node.data.name === 'region1') {
-                    hasChild = true;
-                } else if (node.data.name === 'region2') {
-                    hasChild = false;
-                } else {
-                    hasChild = Math.random() > 0.5;
-                }
             }
         },
         created() {
