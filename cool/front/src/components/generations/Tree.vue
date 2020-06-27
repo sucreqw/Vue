@@ -1,7 +1,7 @@
 <template>
 
 
-  <div ref="box" style="position: relative">
+  <div ref="box" style="position: relative;color: white">
     <div class="talkbubble" v-for="(item,index) in gens" :id="item.id" @click="add($event,index)"
          :style="'margin-left: '+ getLeft(item.id,item.father,index) +'px;margin-top: '+ getTop(item.id) +'px;border: '+ isSelect(item.id)+'px solid '+ gender2color(item.gender) ">
       第{{item.generation}}世<br>姓名：{{item.nickname}}<br>配偶：{{item.wife}}<br>
@@ -195,9 +195,9 @@
       //根据性别返回颜色
       gender2color(gender) {
         if (gender.toString() == "1") {
-          return '#111;';
+          return '#fdfff8;';
         } else {
-          return '#FF1493;';
+          return 'red;';
         }
       },
       //如果被点击了，加粗边框
@@ -281,7 +281,8 @@
 
     width: 130px;
     height: 70px;
-    border: 2px solid #111;
+    border: 2px solid white;
+    /*background: white;*/
     position: absolute;
     /*position: relative;*/
     -moz-border-radius: 10px;
@@ -293,7 +294,7 @@
 
 
   .dline {
-    background: #444444;
+    background: #fdfff8;
     position: absolute;
     font-size: 1px;
     line-height: 1%;

@@ -1,5 +1,5 @@
 <template>
-  <PageWapper>
+  <PageWapper style="color: white">
     <br>
     <el-form inline style="text-align: center" :model="searchFormData">
       <el-form-item label="内容">
@@ -11,11 +11,11 @@
     </el-form>
     <el-divider></el-divider>
     <!--开始展示数据-->
-    <div style="margin-left: 10%;margin-right: 10%;" class="infinite-list-wrapper" v-infinite-scroll="load">
-      <el-collapse accordion v-for="(item,index) in tableData">
-        <el-collapse-item>
-          <template slot="title">
-            <div > {{item.title}}</div>
+    <div style="margin-left: 10%;margin-right: 10%; " class="infinite-list-wrapper" v-infinite-scroll="load">
+      <el-collapse accordion v-for="(item,index) in tableData" >
+        <el-collapse-item >
+          <template slot="title" >
+            <div> {{item.title}}</div>
           </template>
           <div :id="'content_'+item.id">{{formatContent(item.content,item.id)}}</div>
         </el-collapse-item>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-  import defaultImg from '../../assets/share.jpg';
+  import defaultImg from '../../assets/fate.jpg';
   import {listPage} from "../../service/shareDO";
 
   export default {
@@ -105,6 +105,13 @@
   }
 </script>
 
-<style scoped>
-
+<style>
+  .el-collapse-item__header {
+ background-color: #343434;
+    color: white;
+  }
+  .el-collapse-item__content{
+    background-color: #343434;
+    color: white;
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <PageWapper :style="bgImg">
-    <div style="text-align: center">
+    <div style="text-align: center;color: white">
       <br>
       <br>
       <h1>I am Sucre</h1>
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-  import defaultImg from '../assets/imageproxy.jpg';
+  import defaultImg from '../assets/fate.jpg';
 
   export default {
     name: "Index",

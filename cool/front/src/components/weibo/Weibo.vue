@@ -1,5 +1,5 @@
 <template>
-  <PageWapper>
+  <PageWapper style="color: white">
     <div v-if="status==0">
       <el-row style="margin-left: 15px;margin-right: 15px">
         <el-col :xs="25" :sm="25" :md="30" :lg="30" :xl="30">
@@ -166,7 +166,7 @@
 </template>
 
 <script>
-  import defaultImg from '../../assets/weibo.jpg';
+  import defaultImg from '../../assets/fate.jpg';
   import {create, get, like, listPage} from "../../service/weiboDO";
   import {commentCreate, commentListPage} from "../../service/commentsDO";
 

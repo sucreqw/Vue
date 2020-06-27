@@ -1,8 +1,8 @@
 <template>
-  <PageWapper>
+  <PageWapper style="color: white">
     <el-container v-if="status==0">
 
-      <el-main style="border-bottom: 1px solid #ccc" ref="main" id="mainTree">
+      <el-main style="border-bottom: 1px solid #ccc;color: white" ref="main" id="mainTree">
         <Tree ref="tree"></Tree>
       </el-main>
       <br>
@@ -144,7 +144,7 @@
 </template>
 
 <script>
-  import defaultImg from '../../assets/gens.jpg';
+  import defaultImg from '../../assets/fate.jpg';
   import Tree from "./Tree";
   import store from '../../service/store.js';
   import {create, listPage} from "../../service/generationsDO";

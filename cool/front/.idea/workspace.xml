@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a88541be-b55e-42dc-888a-c1550b8de0c0" name="Default Changelist" comment="" />
+    <list default="true" id="a88541be-b55e-42dc-888a-c1550b8de0c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/drone/Drone.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/drone/Drone.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/generations/Generations.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generations/Generations.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/generations/Tree.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generations/Tree.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/share/Share.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/share/Share.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/weibo/Weibo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/weibo/Weibo.vue" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,25 +26,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>logo</find>
-      <find>&lt;/div&gt;</find>
-      <find>gens</find>
-      <find>set</find>
-      <find>get</find>
-      <find>.get</find>
-      <find>lastid</find>
-      <find>t.set</find>
-      <find>l.set</find>
-      <find>lines</find>
-      <find>ficon_swtxt</find>
-      <find>path</find>
-      <find>publicPath</find>
-      <find>/cool/api</find>
-      <find>/cool</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -102,6 +94,8 @@
       <workItem from="1592783648081" duration="984000" />
       <workItem from="1592790122511" duration="2562000" />
       <workItem from="1592828805271" duration="426000" />
+      <workItem from="1592921560671" duration="363000" />
+      <workItem from="1593217622228" duration="10408000" />
     </task>
     <task id="LOCAL-00001" summary="成交整合八字版块，页面改为暗黑。对接两个后台。">
       <created>1592829152767</created>
@@ -110,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592829152767</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="成交整合八字版块，页面改为暗黑。对接两个后台。">
+      <created>1592921917532</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592921917532</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +141,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/service/store.js</url>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/drone/Drone.vue</url>
+          <line>94</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

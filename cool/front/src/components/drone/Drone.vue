@@ -1,5 +1,5 @@
 <template>
-  <PageWapper>
+  <PageWapper style="color:white;">
     <meta name="referrer" content="never">
     <div v-if="status==0" class="infinite-list-wrapper" v-infinite-scroll="load">
       <el-container v-for="(item,index) in tableData" style="margin-left: 10px;margin-right: 10px;">
@@ -125,7 +125,7 @@
 </template>
 
 <script>
-  import defaultImg from '../../assets/drone.jpg';
+  import defaultImg from '../../assets/fate.jpg';
   import {listPage, like, get} from "../../service/droneDO";
   import {commentCreate, commentListPage} from "../../service/dronecommentDO";
 

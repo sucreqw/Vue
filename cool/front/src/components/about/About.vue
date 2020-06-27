@@ -1,6 +1,6 @@
 <template>
   <PageWapper :style="bgImg">
-    <div style="text-align: center">
+    <div style="text-align: center; color: white">
       <br>
       <br>
       <p>
@@ -21,7 +21,9 @@
       <p>
         <strong>后端：spring + mybatis-plus+tomcat+mysql</strong>
       </p>
-
+<p>
+  <strong> 2020年7月1日：全部更新为暗黑模式，增加八字功能,增加登录功能。</strong>
+</p>
 
     </div>
   </PageWapper>
@@ -29,7 +31,7 @@
 </template>
 
 <script>
-  import defaultImg from '../../assets/imageproxy.jpg';
+  import defaultImg from '../../assets/fate.jpg';
 
   export default {
     name: "About",
